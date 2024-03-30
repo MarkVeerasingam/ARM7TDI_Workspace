@@ -1,3 +1,4 @@
-A Workspace for ARM7TDI (armv4t Architecture), compiled and run in VSCODE.
+## ARM7TDI Workspace
 
-Target Device used was ADUC7126 debugged through a Jflash Lite
+This is a GCC based workspace for the ARM7TDI compiled and built on VSCODE IDE.
+The intention device to be targetted was an ADUC7126 debugged through a Jflash Lite
