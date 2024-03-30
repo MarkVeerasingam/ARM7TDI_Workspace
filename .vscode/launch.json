@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/workspace/debug/ARM7TDI_Compile.elf",
+            "name": "Debug with JLink",
+            "request": "launch",
+            "type": "cortex-debug",
+            "device": "ADUC7126",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "servertype": "jlink"
+        },
+        {
+            "type": "gnu-debugger",
+            "request": "launch",
+            "name": "GNU debugger",
+            "program": "${workspaceFolder}/workspace/debug/ARM7TDI_Compile.elf",
+            "toolchain": "C:\\arm-gnu-toolchain-13.2.Rel1-mingw-w64-i686-arm-none-eabi\\bin",
+            "client": "arm-none-eabi-gdb",
+            "clientArgs": [],
+            "server": "JLinkGDBServer",
+            "serverArgs": [],
+            "serverPort": 2331
+        }
+    ]
+}
